@@ -1,11 +1,56 @@
 @use '../variables' as *;
 
-.main-nav {
+button {
+	background-color: #ffffff;
+	// border-color: ;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 8px;
+	border-radius: 3px;
+	// transition:
+	font-family: arial;
+	// text-transform:
+	font-size: 11px;
+	// text-align:
+	margin: 7px 0 7px 3px;
 }
 
-.left-nav > ul,
+.main-nav {
+  display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	border-bottom: 2px solid $lightest-gray;
+}
+
+.left-nav > ul {
+  display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	margin: 0 0 0 7px;
+}
+
 .right-nav > ul {
-  
+  display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+
+
+.sections, .search, .gear {
+	color: #000000;
+}
+.sections:hover, .search:hover, .gear:hover {
+	background-color: $lightest-gray;
+}
+
+
+.subscribe, .login {
+	background-color: $light-blue;
+}
+
+.subscribe:hover, .login:hover {
+	background-color: $blue;
+	border-color: $darkest-blue;
 }
 
 .left-nav {
@@ -39,7 +84,37 @@
 
 .left-nav > ul > li:hover,
 .right-nav > ul > li:last-of-type:hover {
-  
+
 }
 
-    
+
+
+
+.gear-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 3px;
+  z-index: 1;
+  right: 10vw;
+}
+
+.gear-container:hover .gear-dropdown {
+  display: block;
+  box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
+  width: 200px;
+  
+
+}
+
+
+.gear-dropdown a {
+  display: block;
+  
+
+}
+
+.gear-dropdown a:hover {
+  background-color: #e2e2e2;
+}
+
