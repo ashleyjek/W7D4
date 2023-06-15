@@ -93,16 +93,19 @@ button {
 .gear-dropdown {
   display: none;
   position: absolute;
+  font-family: arial;
+  color: #999;
   background-color: white;
   border-radius: 3px;
   z-index: 1;
   right: 10vw;
+  padding: 10px;
 }
 
 .gear-container:hover .gear-dropdown {
   display: block;
   box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
-  width: 200px;
+  width: 150px;
   
 
 }
@@ -110,11 +113,45 @@ button {
 
 .gear-dropdown a {
   display: block;
-  
-
 }
 
 .gear-dropdown a:hover {
   background-color: #e2e2e2;
+  border-radius: 3px;
+  color: #000000;
 }
 
+.editions > li > a {
+  text-transform: uppercase;
+
+}
+.editions > li > a:hover {
+  text-decoration: none;
+
+}
+
+.help > li > a {
+  color: #326891;
+}
+.help > li > a:hover {
+  color: #326891;
+  background-color: transparent;
+}
+.dropdown-subtitle {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  color: #6f6f6f;
+  margin: 0 0 7px 0;
+  padding: 5px 3px;
+}
+
+.editions {
+  border-bottom: 1px solid #e2e2e2;
+}
+.editions > li {
+  padding: 5px 3px;
+}
+.help > li {
+  padding: 5px 3px;
+}
