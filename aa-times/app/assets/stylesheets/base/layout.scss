@@ -7,21 +7,61 @@ html {
 }
 
 body {
-	// ...
+	width: 80%;
+	margin: 0 auto;
+	font-family: arial $serif;
+	font-size: 12px;
 }
 
 button {
-	// background-color:
-	// border-color:
-	// color:
-	// font-weight:
-	// padding:
-	// border-radius:
+	background-color: #ffffff;
+	// border-color: ;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 8px;
+	border-radius: 3px;
 	// transition:
-	// font-family:
+	font-family: arial;
 	// text-transform:
-	// font-size:
+	font-size: 11px;
 	// text-align:
+	margin: 7px 0 7px 3px;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	border-bottom: 2px solid $lightest-gray;
+}
+.left-nav > ul {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	margin: 0 0 0 7px;
+}
+
+.right-nav > ul {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+
+.sections, .search, .gear {
+	color: #000000;
+}
+.sections:hover, .search:hover, .gear:hover {
+	background-color: $lightest-gray;
+}
+
+
+.subscribe, .login {
+	background-color: $light-blue;
+}
+
+.subscribe:hover, .login:hover {
+	background-color: $blue;
+	border-color: $darkest-blue;
 }
 
 button:hover {
@@ -47,4 +87,9 @@ hr {
 .hr-top {
 	height: 2px;
 	margin-bottom: 1px;
+}
+
+a {
+
+
 }
